@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d8cb66af4f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="estilo.css" class="tema" />
+    <link rel="stylesheet" class="temaOscuro">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body class="fondo">
+    <button id="botonCambiarEstilo">
+        <i id="icono" class="fas fa-sun"></i>
+    </button>
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="calculadora col-md-7 col-sm-12">
+                <div class="calculadoraFondo">
+                    <div id="operacionRealizada">0</div>
+                    <div id="txtResultado"></div>
+                    <div class="fila">
+                        <button class="tecla" onclick="operador('1')">1</button>
+                        <button class="tecla" onclick="operador('2')">2</button>
+                        <button class="tecla" id="3" onclick="operador('3')">3</button>
+                        <button class="tecla op" onclick="operacion('*')">x</button>
+                    </div>
+                    <div class="fila">
+                        <button class="tecla" onclick="operador('4')">4</button>
+                        <button class="tecla" onclick="operador('5')">5</button>
+                        <button class="tecla" onclick="operador('6')">6</button>
+                        <button class="tecla op" onclick="operacion('-')">-</button>
+                    </div>
+                    <div class="fila">
+                        <button class="tecla" onclick="operador('7')">7</button>
+                        <button class="tecla" onclick="operador('8')">8</button>
+                        <button class="tecla" onclick="operador('9')">9</button>
+                        <button class="tecla op" onclick="operacion('+')">+</button>
+                    </div>
+                    <div class="fila">
+                        <button class="tecla limpiar" onclick="limpiar()">C</button>
+                        <button class="tecla" onclick="operador('0')">0</button>
+                        <button class="tecla" onclick="operador('.')">.</button>
+                        <button class="tecla op" onclick="operacion('/')">/</button>
+                    </div>
+                    <div class="fila">
+                        <button class="tecla igual" onclick="calculo()">=</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="fondoHistorial col-md-4 col-sm-12">
+                <button class="botonHistorial">Eliminar historial</button>
+                <div class="historial">
+                    <!-- <p class="elemento">ejj4ee</p>
+                    <p class="elemento">ejjgfdftgee</p>
+                    <p class="elemento">ejj34vee</p>
+                    <p class="elemento">ejj34vee</p> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button id="botonCambiarEstilo">Change</button> -->
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+
+
+.op{
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+body{
+background: rgb(2,0,36);
+background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(51,69,112,1) 0%, rgba(18,25,48,1) 42%, rgba(9,3,22,1) 100%);}
+
+button{
+    background-color: rgb(54, 20, 65);
+    color: whitesmoke;
+}
+.limpiar{
+    background-color: rgba(84, 8, 155, 0.801);
+
+}
+.igual{
+    background-color: rgba(84, 8, 155, 0.801);
+}
+
+.calculadoraFondo{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+#txtResultado{
+    background-color: black;
+    color: whitesmoke;
+}
+
+#operacionRealizada{
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+.fondoHistorial{
+    background-color: rgba(0, 0, 0, 0.322);
+
+}
+
+.elemento{
+    color: white;
+}
+
+
+.tecla:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+}
+.botonHistorial:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+}
